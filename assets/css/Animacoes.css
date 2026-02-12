@@ -1,0 +1,64 @@
+/*@import url("/assets/css/reset/css/reset.css");
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    /*position: absolute;*/
+    /*background: #d53369;
+
+    /*animation-name: exemplo;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: /*3*/ /*infinite;
+    /*animation-direction: /*reverse*//* alternate /*alternate-reverse;
+    /*animation-timing-function: ease-in-out;
+    /*animation-fill-mode: /*forwards*/ /*backwards*/ /*both;*/
+    /*animation: exemplo 5s linear 2s infinite alternate;*/
+
+    /*color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    /*transittion: <propriedade> <duração> <função de tempo> <delay>*/
+    /*transition: background 1s linear, transform 1.5s ease-in-out 0.5s;
+}
+
+.box:hover{
+    /*background-color: rgb(51, 57, 167);
+    transform: rotateX(40deg);*/
+    /*animation-play-state: paused;
+}
+
+@keyframes exemplo {
+    /*from*//* 0%{
+        background-color: palegreen;
+        /*width: 200px;
+        height: 200px;
+    }
+
+    50%{
+        background-color: darkblue;
+        /*width: 500px;
+        height: 400px;
+    }
+
+    /*to*//* 100%{
+        background-color: purple;
+        /*width: 100px;
+        height: 200px;
+    }
+}*/

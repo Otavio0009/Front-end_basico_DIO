@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <link rel="stylesheet" href="/assets/css/pseudo-elementos.css">
+</head>
+<body>
+    <h1>Pseudos-elementos</h1>
+    <p> Usado para adicionar elementos extras, sem a necessidade de declara-lo no HTML, ou para selecionar uma parte de algum elemento.</p>
+    <p>Identificando por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+    <p>seleciona aprimeira letra da primeira linha</p>
+    <details>
+        <summary>Propriedades disponiveis:</summary>
+    </details>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>margin</code></li>
+        <li><code>padding</code></li>
+        <li><code>border</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+
+    <video controls>
+        <source src="/video-imagem-audio/vidio/Teste.mp4">
+    </video>
+    <hr>
+    <p>Exemplo:</p>
+    <label for="nome">Nome</label>
+    <input
+    name="Nome"
+    type="text"
+    placeholder="EX: Tal pessoa">
+
+    <label for="senha">Senha</label>
+    <input
+    type="password"
+    name="Senha"
+    placeholder="Minimo de 10 caracteres">
+
+    <hr>
+
+    <p class="Exemplo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptates voluptatibus ad, vitae amet doloremque aut debitis quos expedita maxime sequi eius placeat voluptate quam veritatis. Consequatur laborum saepe sunt?</p>
+    <p class="Exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit accusamus officia neque, aut similique fugiat quam repellat, beatae nihil minima itaque quae harum, assumenda esse facere. Porro, odio recusandae.</p>
+
+    <hr>
+    <br>
+
+    <form>
+        <label for="fileUpload">Upload de arquivos</label>
+        <input name="fileUpload" type="file">
+    </form>
+
+    <hr>
+    <br>
+
+    <p>
+        <span>Exemplo 1</span>
+        <span>Exemplo 2</span>
+        <span>Exemplo 3</span>
+    </p>
+
+    <hr>
+    <br>
+
+    <div class="card-image"></div>
+
+    <hr>
+    <br>
+
+    <h1>Pseudo-classes | :hover</h1>
+
+    <button>Entrar em contato</button>
+
+    <h1>:active</h1>
+    <button class="botao">Entrar em contato</button>
+    <br><br>
+    <a href="https://www.youtube.com/">site youtube</a>
+
+    <hr>
+    <br>
+
+    <h1>Pseudo-classes | :focus, :focus-within e :focus-visible</h1>
+
+    <form>
+        <p>Faça seu pedido! Escolha o sabor de sorvete</p>
+
+        <label>
+            Nome Completo:
+            <input name="nome" type="text">
+        </label>
+        <label>
+            Sabor do sorvete:
+            <select name="sabor">
+                <option value="chocolate">chocolate</option>
+                <option value="morango">Moroango</option>
+                <option value="doce-leite">Doce de Leite</option>
+                <option value="abacaxi">Abacaxi</option>
+            </select>
+        </label>
+    </form>
+    <button class="button">Finalizar pedido</button>
+
+    <hr><br>
+
+    <h1>:target</h1>
+    
+    <h3>Tadle of Contents</h3>
+
+    <ol>
+        <li><a href="#p1">Pular para primeira parágrafo!</a></li>
+        <li><a href="#p2">Pular para o segundo parágrafo!</a></li>
+        <li><a href="#">Esse link não vai para lugar nenhum, pois ele não existe.</a></li>
+    </ol>
+    <h3>Meu artigo</h3>
+
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum odio repellat, sunt ut laudantium blanditiis aliquid repudiandae? Tenetur, soluta nostrum laborum sequi eius tempore odio? Deleniti debitis laudantium numquam sunt.</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt doloribus ipsum eum asperiores alias, obcaecati tempora, accusamus molestias esse totam tenetur hic id delectus laborum repellendus rerum voluptates quaerat.</p>
+
+    <hr><br>
+    
+    <h1>:enabled e :disabled</h1>
+
+    <button>Botao habilitado</button>
+    <button disabled>Botao desabilitado</button>
+
+    <hr>
+    <br>
+
+    <a href="https://br.pinterest.com/" class="o-1">Pinterest</a>
+    <br>
+    <a href="https://www.instagram.com/otavio_neto.09/">instagram</a>
+
+    <hr><br>
+
+    <h1>:placeholder-shown</h1>
+
+    <label for="name">Nome completo</label>
+    <input name="nome" type="text">
+    <br><br>
+    <label for="email">E-mail</label>
+    <input name="email" type="email" placeholder="name@exemplo.com">
+    <br><br>
+    <label for="age">Sua idade</label>
+    <input name="age" type="number" value="18" placeholder="18 anos ou mais">
+
+    <hr><br>
+
+    <h1>:checked e :indeterminat</h1>
+
+    <div>
+        <input class="input" name="task-01" type="checkbox">
+        <label for="task-01">Tarefa 01</label>
+    </div>
+    <div>
+        <input name="task-02" type="checkbox">
+        <label for="task-02">Tarefa 02</label>
+    </div>
+    <div>
+        <input  name="task-03" type="checkbox">
+        <label for="task-03">Tarefa 03</label>
+    </div>
+    <div>
+        <input  name="task-04" type="checkbox">
+        <label for="task-04">Tarefa 04</label>
+    </div>
+    <div>
+        <input name="task-05" type="checkbox">
+        <label for="task-05">Tarefa 05</label>
+    </div>
+
+    <hr>
+
+    <input name="sexo" type="radio">
+    <label for="sexo">Sexo Masculino</label>
+    <input name="sexo" type="radio">
+    <label for="sexo">Sexo Femino</label>
+
+    
+</body>
+</html>

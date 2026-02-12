@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica Html</title>
+    <link rel="stylesheet" href="/assets/css/Style.css">
+</head>
+<body>
+        <h1>Estudadando as tegs main, headere footer</h1>
+    <main>
+        Main
+        <header>
+            Header
+        </header>
+        <footer>
+            <address>R: das Flores, numero 09</address>
+        </footer>
+
+        <section>
+            <header>Header 2</header>
+            <footer>Footer 2</footer>
+        </section>
+    </main>
+    <footer></footer><br>
+    <h1>Estunado as tegs aside, section e nav</h1>
+    <header></header>
+    <main>
+        <section>Section são as seções do site</section>
+        <aside>Aside são assuntos que não são o principais do site, que ficão nas barra lateral do site</aside>
+        <nav>Nav são links de navegações do site</nav>
+    </main>
+    <footer></footer>
+    <h1>Estudadando as tegs article, blockquote e q</h1>
+    <header></header>
+    <main>
+        <article>Article são os artigos referentes ao seu site e o article pode ter um dentro do outro.</article>
+        <blockquote>
+            Blockquote é uma citação longa, que pode ser usada para destacar um trecho maior de um texto ou discurso.
+            Ela é geralmente formatada com recuo e pode incluir aspas ou outras marcações visuais para indicar que se trata de uma citação.
+        </blockquote>
+        <q>
+            Q é uma citação curta, que pode ser usada para destacar uma frase ou expressão específica dentro de um texto.
+            Ela é geralmente formatada com aspas e pode ser usada para indicar que se trata de uma citação direta ou indireta.
+        </q>
+    </main>
+    <footer></footer>
+    <h1>Estudadando as tegs figure, figcaption e picture</h1>
+    <figure>Figure Delimita os escopo de uma imagem<br>
+        <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v2071482028496662885/products/100072479.00.638931103120222475-iphone-17-pro-max-1Tb-prateado-mfyv4be-a.jpg&height=350&width=350&quality=1.0" width="250">
+        <figcaption>Figcaption é a legenda da imagem</figcaption> 
+    </figure>
+    <picture>
+        No picture póde ser usado para colocar imagens diferentes para tamanhos de telas diferentes e tambem para colocar imagens em formatos diferentes como webp, png, jpg, etc. E não apenas isso mas também usando varias fontes de ferentes.<br>
+        <source srcset="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021.jpg.og.jpg?202508290234" type="image/jpeg" media="(min-width: 600px)">
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-og-202503?wid=1200&hei=630&fmt=jpeg&qlt=90&.v=1739216814915" alt="">
+
+    </picture><br>
+    <h1>Estunado as tegs details</h1>
+    <select name="Browser" id="">
+        <option value="">Selecione o seu navegador</option>
+        <option value="Chome">Google Chome</option>
+        <option value="Farefox">Mozila Farefox</option>
+        <option value="Edge">Microsoft Edge</option>
+        <option value="Safare">Safire</option>
+        <option value="Opera">Opera</option>
+    </select>
+    <hr>
+    <h1>Funcinalidade da details</h1>
+    <input list="browsers" type="search" name="search" />
+    <datalist id="browsers">
+        <option value="Chome">Google Chome</option>
+        <option value="Farefox">Mozila Farefox</option>
+        <option value="Edge">Microsoft Edge</option>
+        <option value="Safare">Safire</option>
+        <option value="Opera">Opera</option>
+    </datalist>
+    <hr>
+    <h1>Estudadando as tegs code, kbd e pre</h1>
+    <p>Para copiar essa enformação aperte <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+    <p>Para mudar o fundo de um elemento, utiliza o comando <code>background-color</code></p>
+    <p>Comando que altera cor de fundo:</p>
+    <pre>
+        body{
+            background-color: blanchedalmond;
+        }
+    </pre>
+    <hr>
+    <h1>Estudando as tegs detalist e summary</h1>
+    <details>
+        <p>Pra execultar essa ação, utilize o comando background-color no CSS.</p>
+    </details><br>
+    <details>
+        <summary>Comando que altera cor de fundo:</summary>
+        <pre>
+            body{
+                background-color: blanchedalmond;
+            }
+        </pre>
+    </details><br>
+    <hr>
+    <h1>Estudadando as tegs meter e progress</h1>
+    <meter max="100" value="5
+    0" min="0"></meter>
+    <progress max="100" min="0" value="0" id="progress"></progress>
+    <script>
+        var progress = document.getElementById("progress");
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if(progress.value >= 100){
+                alert("Carregamento completo!");
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+    <hr>
+    <h1>Estudadando teg canvas</h1>
+    <canvas id="meuCanvas" width="200" height="100" style="border: 1px solid #000;">
+    </canvas>
+    <script>
+        var c = document.getElementById("meuCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+    <hr>
+    <button><a href="/page/about.html">Voltar para pagina anterior</a></button><br>
+    <button><a href="/index.html">Voltar para pagina inicila</a></button>
+</body>
+</html>

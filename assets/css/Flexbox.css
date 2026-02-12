@@ -1,0 +1,449 @@
+@import url("/assets/css/reset/css/reset.css");
+
+.contener_03{
+    background: palegreen;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+.contener_04{
+    background: palevioletred;
+    padding: 20px;
+    margin: 20px;
+    display: inline-flex;
+}
+
+.contener_05{
+    background: darkgreen;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+.contener_06{
+    background: darkred;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;/*valor padrão flex-wrap */
+    /*flex-wrap: wrap-reverse;/*invete a posição dos valores*/
+
+}
+
+.contener_07{
+    background: darkblue;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+}
+
+.contener_08{
+    background: darkcyan;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+    /*justify-content: flex-start;/*value padrão 
+    justify-content: flex-end;/* coloca tudos os itens no final do container */
+    justify-content: center;/* centraliza os itens no container
+    /*justify-content: space-between;/* distribui os itens com espaçamento igual entre eles
+    /*justify-content: space-around;/* distribui os itens com espaçamento igual ao redor deles
+    /*justify-content: space-evenly;/* distribui os itens com espaçamento igual entre eles e nas extremidades*/
+}
+
+.contener_09{
+    background-color: dodgerblue;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+
+    /*align-items: stretch;/*valor padrão, estica os itens para preencher o container
+    align-items: flex-start; /* alinha os itens ao início do container
+    align-items: flex-end; /* alinha os itens ao final do container 
+    align-items: center; /* alinha os itens ao centro do container */
+    align-items: baseline; /* alinha os itens pela linha de base do texto */
+}
+
+.contener_10{
+    background-color: teal;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    width: 300px;
+    height: 250px;
+    align-items: space-between;
+    align-items: flex-start;
+    /*align-content: normal; /*valor padrão, agrupa os itens sem alterar o espaçamento*/
+    align-content: flex-start;/*alinha as linhas de itens ao início do container*/
+    /*align-content: flex-end;/*alinha as linhas de itens ao final do container*/
+    /*align-content: center;/*alinha as linhas de itens ao centro do container*/
+    /*align-content: space-between;/*distribui as linhas de itens com espaçamento igual entre elas*/
+    /*align-content: space-around;/*distribui as linhas de itens com espaçamento igual ao redor delas*/
+    /*align-content: stretch;/*estica as linhas de itens para preencher o container*/
+}
+
+.contener_11{
+    background-color: purple;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /*row-gap: 10px;
+    column-gap: 20px;
+    ou*/ gap: 30px 40px;
+}
+
+.contener_12{
+    background-color: darkorange;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contener_13{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contener_14{
+    background-color: yellow;
+    padding: 10px;
+    margin: 20px;
+
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.contener_15{
+    background-color: green;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contener_16{
+    background-color: darkblue;
+    padding: 10px;
+    margin: 20px;
+
+    height: 200px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contener_17{
+    background-color: darkred;
+    padding: 10px;
+    margin: 20px;
+
+    height: 200px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#contener_01{
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+}
+
+#contener_02{
+    flex-direction: column;
+    /*flex-direction: column-reverse;*/
+}
+
+#contener_03{
+    flex-direction: column-reverse;
+}
+
+#contener_04{
+    flex-direction: row-reverse;
+}
+
+#contener_05{
+    flex-direction: row;
+}
+
+#contener_06{
+    flex-direction: column;
+    height: 300px;
+}
+
+#contener_07{
+    flex-flow: row wrap;
+}
+
+#contener_08{
+    flex-flow: column wrap-reverse;
+    height: 300px;
+}
+
+#contener_09{
+    flex-flow: row wrap;
+    
+}
+
+#contener_10{
+    flex-flow: column wrap;
+    height: 300px;
+}
+
+#contener_11{
+    flex-flow: row-reverse wrap;
+}
+
+#contener_12{
+    flex-flow: column wrap;
+    height: 300px;
+}
+
+#contener_13{
+    flex-flow: row wrap;
+}
+
+#contener_14{
+    flex-flow: column wrap;
+    height: 300px;
+}
+
+#contener_15{
+    flex-direction: row;
+}
+
+#contener_16{
+    flex-direction: column;
+}
+
+#contener_17{
+    flex-direction: row;
+}
+
+#contener_18{
+    flex-direction: column;
+}
+
+#contener_19{
+    /*flex-direction: row;*/
+    flex-direction: column;
+}
+
+#contener_20{
+    /*flex-direction: row;*/
+    flex-direction: column;
+}
+
+#contener_21{
+    flex-flow: row nowrap;
+}
+
+#contener_22{
+    flex-flow: column nowrap;
+}
+
+#contener_23{
+    flex-direction: column;
+}
+
+#contener_24{
+    flex-direction: column;
+}
+
+.item-04{
+    background-color: orange;
+    margin: 10px;
+}
+
+.item-05{
+    background-color: darkred;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.item-06{
+    background-color: darkgreen;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.item-07{
+    color: wheat;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+.item-08{
+    color: whitesmoke;
+    background-color: darkgrey;
+    margin: 10px;
+}
+
+.item-09{
+    color: whitesmoke;
+    background-color: teal;
+    margin: 10px;
+}
+
+.item-10{
+    color: whitesmoke;
+    background-color: purple;
+    margin: 10px;
+
+    width: 40px;
+    height: 40px;
+}
+
+.item-11{
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.item-12{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.item-13{
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.item-14{
+    padding: 8px;
+    background-color: blueviolet;
+    color: whitesmoke;
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 1;
+}
+
+.item-15{
+    background-color: greenyellow;
+    /*width: 100px;*/
+    text-align: center;
+    /*flex-grow: 1;*/
+}
+
+.item-16{
+    background-color: darkorange;
+    text-align: center;
+    /*flex: initial;
+    flex: auto;
+    flex: none;
+    flex: 1;*/
+    flex: 1 1 auto;
+}
+
+.item-17{
+    background-color: darkcyan;
+    text-align: center;
+    flex: 1;
+}
+
+.item_01{
+    width: 50px;
+    height: 50px;
+}
+
+.item_02{
+    width: 80px;
+    height: 80px;
+}
+.item_03{
+    width: 40px;
+    height: 40px;
+}
+
+.item_04{
+    width: 40px;
+    height: 40px;
+}
+
+.item_05{
+    width: 50px;
+    height: 50px;
+}
+
+.item_06{
+    width: 80px;
+    height: 80px;
+}
+
+.item_10{
+    order: 1;
+}
+
+.item_11{
+    order: 2;
+}
+
+.item_19{
+    order: -2;
+}
+
+.item_20{
+    order: -1;
+}
+
+.item_26{
+    /*max-width: 30px;*/
+    max-height: 30px;
+    flex-grow: 3;
+}
+
+.item_30{
+    flex-shrink: 2;
+}
+
+.item_36{
+    /*flex-basis: 1000px;
+    flex-basis: auto;
+    flex-basis: 0;*/
+    flex-basis: /*min-content*/ max-content;
+}
+
+.item_42{
+    /*align-self: stretch;/*valor padrão, estica os itens para preencher o container
+    align-self: flex-start; /* alinha os itens ao início do container*/
+    align-self: flex-end; /* alinha os itens ao final do container 
+    align-self: center; /* alinha os itens ao centro do container 
+    align-self: baseline; /* alinha os itens pela linha de base do texto */
+}

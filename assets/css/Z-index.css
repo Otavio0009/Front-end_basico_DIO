@@ -1,0 +1,54 @@
+@import url("/assets/css/reset/css/reset.css");
+
+.teste_08{
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px -7px gray;
+    position: absolute;
+    
+}
+
+#elemento-07{
+    background-color: orange;
+    left: 10px;
+    top: 10px;
+    z-index: 5;
+}
+
+#elemento-08{
+    background-color: palevioletred;
+    left: 20px;
+    top: 20px;
+    z-index: 4;
+}
+
+#elemento-09{
+    background-color: palegreen;
+    left: 30px;
+    top: 30px;
+    z-index: 3;
+}
+
+#elemento-010{
+    background-color: paleturquoise;
+    left: 40px;
+    top: 40px;
+    z-index: 2;
+}
+
+#elemento-011{
+    background-color: violet;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+#elemento-012{
+    background-color: blueviolet;
+    left: 60px;
+    top: 60px;
+    z-index: 0;
+}

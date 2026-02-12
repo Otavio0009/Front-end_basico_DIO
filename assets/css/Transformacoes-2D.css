@@ -1,0 +1,25 @@
+/*@import url("/assets/css/reset/css/reset.css");
+
+/*body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background: linear-gradient(90deg, #fc466b 0%, blue);
+    width: 200px;
+    height: 200px;
+    /*border-radius: 50%;*/
+    /*border-radius: 8px;
+}
+
+.box:hover{
+    /*transform: translate(50px, 0px);*/
+    /*transform: /*rotate(180deg);*//* rotatex(30deg) rotatey(50deg);*/
+    /*transform: scale(1.2);*/
+    /*transform: skew(0deg, 50deg);*/
+    /*transform: matrix(1.2, 0.2, 0.2, 1.2, 50, -50);
+}*/

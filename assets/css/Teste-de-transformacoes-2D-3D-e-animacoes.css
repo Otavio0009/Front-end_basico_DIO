@@ -1,0 +1,244 @@
+@import url("/assets/css/reset/css/reset.css");
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    perspective: 300px;
+    font-family: "Quicksand", cursive;
+    flex-direction: column
+}
+/*
+.list{
+    background-color: #d53369;
+    padding: 20; 
+    border-radius: 4px;
+    box-shadow: 20px 20px 10px lightgray; 
+}
+
+.list li{
+    list-style: none;
+    color: whitesmoke;
+    font-weight: blod;
+    padding: 12px 32px;
+    margin-bottom: 4px;
+    transition: background 1s;
+}
+
+.list li:hover{
+    background-color: #b02151;
+}
+
+.list input{
+    accent-color: #daae51;
+}
+
+.list input:checked + span{
+    text-decoration: line-through;
+}
+
+.list li:has(input:checked){
+    background-color: #f0ba1a;
+    color: #d53369;
+    border-radius: 4px;
+}*/
+
+/*
+button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #d53369, #daae51);
+    box-shadow: 8px 12px 7px lightgray;
+    animation: teste 2.2s linear infinite;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+@keyframes teste{
+    0%{
+        transform: rotate(0);
+    }
+
+    15%{
+        transform: rotate(-15deg);
+    }
+
+    20%{
+        transform: rotate(10deg);
+    }
+
+    25%{
+        transform: rotate(-10deg);
+    }
+
+    30%{
+        transform: rotate(10deg);
+    }
+
+    35%{
+        transform: rotate(-10deg);
+    }
+
+    40%, 100%{
+        transform: rotate(0deg);
+    }
+}
+*/
+
+/*
+.loader{
+    border: 5px solid #d53369;
+    border-radius: 50%;
+    margin: 8px;
+    /*animation: loader .8s ease-in-out alternate infinite;*//*
+}
+
+.loader:nth-child(1){
+    animation: loader .8s ease-in-out alternate infinite;
+}
+
+.loader:nth-child(2){
+    animation: loader .8s ease-in-out .3s alternate infinite;
+}
+
+.loader:nth-child(3){
+    animation: loader .8s ease-in-out .6s alternate infinite;
+}
+
+
+@keyframes loader{
+    to{
+        transform: scale(1.8);
+    }
+}*/
+
+/*
+body{
+    background: linear-gradient(
+        189deg, rgb(34, 34, 34) 0%, 
+        rgb(34, 13, 80) 50%, 
+        rgb(74, 153, 230) 100%
+        );
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rocket{
+    animation: take-off-rocket 6s ease-in-out infinite alternate;
+}
+
+@keyframes take-off-rocket{
+    0%{
+        transform: translateY(20vh);
+    }
+
+    50%{
+        transform: translateY(-80vh);
+    }
+
+    100%{
+        transform: translateY(20vh);
+    }
+}
+*/
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');/*
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #d53369, #daae51);
+    background-size: 400% 400%;
+
+    animation: gradient 5s ease infinite alternate;
+}
+
+h1{
+    font-family: 3rem;
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+}
+
+.gradient-word{
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    font-size: 4.5rem;
+    /*line-height: 1;*//*
+
+    background: linear-gradient(0deg, transparent, rgba(24, 24, 24, .4));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}*/
+
+.box{
+    position: absolute;
+    background: linear-gradient(90deg, #fc466b, #3f5efb);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: exemplo 5s infinite alternate;
+
+    filter: blur(100px);
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+@keyframes exemplo{
+    0%{
+        transform: rotateY(30deg) rotate(-25deg) translateZ(100px);
+    }
+    25%{
+        transform: rotateY(-30deg) translateZ(100px);
+    }
+    50%{
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    75%{
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    100%{
+        transform: rotateX(20deg) translateZ(0);
+    }
+}

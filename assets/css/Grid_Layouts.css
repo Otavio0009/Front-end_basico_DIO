@@ -1,0 +1,470 @@
+@import url("/assets/css/reset/css/reset.css");
+
+/*
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+
+    display: grid;
+    /*display: inline-grid;
+}
+
+.item{
+    background-color: palegreen;
+}
+*/
+
+/*
+.container {
+    background: yellow;
+    padding: 10px;
+    margin: 20px;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: /*200px 300px 100px */ /* 50% 30% 10% /*10%*/ /*1fr 1fr 1fr*/ /*repeat(3, 1fr)*/ /*repeat(3, 1fr 2fr)*/ /* 100px repeat(3, 1fr) 100px*/ /*repeat(auto-fill, 100px)*/ /*min-content min-content*/ /*max-content*/ /*auto; /*colunas com tamanhos fixos ou percentuais. O fr é uma unidade de medida criada espesificamente grid-template. A função repeat permite repetir para todos, ou para algumas das faixas, o mesmo valor para seu tamanho de colunas. O min-content olha a expesura do menor conteudo(item) e max-content olha a expesura do maior item(conteudo).*/
+    /*grid-template-rows: /*100px 200px*/ /*1fr 1fr*/ /*repeat(2, 1fr); /*linhas com tamanhos fixos ou percentuais. O fr é uma unidade de medida criada espesificamente grid-template e só vai ser visivel quando o definir uma altura. A função repeat permite repetir para todos, ou para algumas das faixas, o mesmo valor para seu tamanho de colunas. O min-content olha a expesura do menor conteudo(item) e max-content olha a expesura do maior item(conteudo).*//*
+    
+}
+
+.item{
+   border: 1px solid black;
+}
+
+.item-a{
+    background-color: lightblue;
+}
+.item-b{
+    background-color: lightcoral;
+}
+.item-c{
+    background-color: lightgray;
+}
+.item-d{
+    background-color: lightpink;
+}
+.item-e{
+    background-color: lightseagreen;
+}
+.item-f{
+    background-color: lightsalmon;
+}*/
+
+/*
+.container{
+    background: yellow;
+    padding: 10px;
+    margin: 20px;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-auto-flow: row; /*define a direção que os itens vão ser colocados na grid, podendo ser em linhas(row) ou colunas(column). O padrão é row.*/
+
+    /*grid-auto-rows: 200px; /*define o tamanho das linhas que forem criadas automaticamente, ou seja, as que ultrapassarem as linhas definidas em grid-template-rows.*/
+    /*grid-auto-columns: 150px; /*define o tamanho das colunas que forem criadas automaticamente, ou seja, as que ultrapassarem as colunas definidas em grid-template-columns.*//*
+}
+
+.item-01{
+    background-color: lightblue;
+}
+.item-02{
+    background-color: lightcoral;
+}
+.item-03{
+    background-color: lightgray;
+}
+.item-04{
+    background-color: lightpink;
+}
+.item-05{
+    background-color: lightseagreen;
+}
+.item-06{
+    background-color: lightsalmon;
+}
+.item-07{
+    background-color: lightgoldenrodyellow;
+}
+*/
+
+/*
+.container{
+    background: yellow;
+    padding: 10px;
+    margin: 20px;
+
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); /*define o tamanho das linhas que forem criadas automaticamente, ou seja, as que ultrapassarem as linhas definidas em grid-template-rows. O tamanho minimo é o menor tamanho que a linha pode ter, e o tamanho maximo é o maior tamanho que a linha pode ter. O auto faz com que a linha cresça conforme o conteudo.*/
+
+    /*grid-template-columns: minmax(100PX, 300PX) minmax(100px, 300px); /*define colunas com tamanho minimo e maximo. O tamanho minimo é o menor tamanho que a coluna pode ter, e o tamanho maximo é o maior tamanho que a coluna pode ter. O auto faz com que a coluna cresça conforme o conteudo.*/
+
+   /* grid-template-columns: repeat(3, minmax(100px, auto)); /*define colunas com tamanho minimo e maximo. O tamanho minimo é o menor tamanho que a coluna pode ter, e o tamanho maximo é o maior tamanho que a coluna pode ter. O fr faz com que a coluna cresça conforme o espaço disponivel na grid.*//*
+}
+
+.item-01{
+    background-color: lightblue;
+}
+.item-02{
+    background-color: lightcoral;
+}
+.item-03{
+    background-color: lightgray;
+}
+.item-04{
+    background-color: lightpink;
+}
+.item-05{
+    background-color: lightseagreen;
+}
+.item-06{
+    background-color: lightsalmon;
+}
+.item-07{
+    background-color: lightgoldenrodyellow;
+}
+*/
+
+/*
+.container-01{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item-01{
+    text-align: center;
+    background-color: orange;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.container-02{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item-02{
+    text-align: center;
+    background-color: deepskyblue;
+
+    /*grid-column-start: 1;
+    grid-column-end: span 3;*//*
+    grid-column: 1 / span 3;
+
+    /*grid-row-start: 2;
+    grid-row-end: span 2;*//*
+    grid-row: 2 / span 2;
+}
+
+.container-03{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+.item-03{
+    text-align: center;
+    background-color: deeppink;
+
+}
+
+.selected{
+    background-color: aqua;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.container-04{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+.item-04{
+    text-align: center;
+    background-color: deeppink;
+
+}
+
+.selected-01{
+    background-color: aqua;
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+}
+
+.container-05{
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+    grid-template-rows: [linha-um] 100px [linha-dois] 100px [linha-tres] 100px;
+}
+.item-05{
+    text-align: center;
+    background-color: deeppink;
+
+}
+.selected-02{
+    background-color: aqua;
+    grid-column: segunda-linha-col / terceira-linha-col;
+    grid-row: linha-dois / linha-tres;
+}
+*/
+
+/*
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    grid-template-areas: "header header header header" 
+    "main main . aside" 
+    "footer footer footer footer";
+}
+.header{
+    background-color: orange;
+    grid-area: header;
+}
+
+.main{
+    background-color: deepskyblue;
+    grid-area: main;
+}
+
+.aside{
+    background-color: lightcoral;
+    grid-area: aside;
+}
+
+.footer{
+    background-color: yellowgreen;
+    grid-area: footer;
+}
+*/
+
+/*
+.container{
+    margin: 0;
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 3fr 1fr;
+    grid-template-areas: "logo navbar"
+    "sidebar main"
+    "sidebar footer";
+}
+
+.logo{
+    background-color: red;
+   grid-area: logo;
+}
+
+nav{
+    background-color: yellow;
+    grid-area: navbar;
+}
+
+aside{
+    background-color: palevioletred;
+    grid-area: sidebar;
+}
+
+main{
+    background-color: skyblue;
+    grid-area: main;
+}
+
+footer{
+    background-color: palegreen;
+    grid-area: footer;
+}
+*/
+
+
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    grid-template-areas: "header header header header" 
+    "main main . aside" 
+    "footer footer footer footer";
+
+    /*
+    grid-template: "header header header header" 200px
+    "main main . aside" 200px
+    "footer footer footer footer" 200px
+    / 1fr 1fr 1fr 1fr;*/
+}
+.header{
+    background-color: orange;
+    grid-area: header;
+}
+
+.main{
+    background-color: deepskyblue;
+    grid-area: main;
+}
+
+.aside{
+    background-color: lightcoral;
+    grid-area: aside;
+}
+
+.footer{
+    background-color: yellowgreen;
+    grid-area: footer;
+}
+
+
+/*
+.container{
+    display: grid;
+    border: 3px solid;
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+
+    /*row-gap: 10px;
+    column-gap: 20px;*//*
+    gap: 20px;
+}
+
+.item-01{
+    background-color: lightblue;
+}
+.item-02{
+    background-color: lightcoral;
+}
+.item-03{
+    background-color: lightgray;
+}
+.item-04{
+    background-color: lightpink;
+}
+.item-05{
+    background-color: lightseagreen;
+}
+.item-06{
+    background-color: lightsalmon;
+}
+.item-07{
+    background-color: lightgoldenrodyellow;
+}
+
+.item-08{
+    background-color: palevioletred;
+}
+
+.item-09{
+    background-color: lightskyblue;
+}
+*/
+
+/*
+.container{
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    gap: 15px;
+
+    /*justify-items: stretch;*//*valor normal*/
+    /*justify-items: start;*//*se posicina na esquerda do item*/
+    /*justify-items: end;*//*se posiciona na direita do intem*/
+    /*justify-items: center;*//*centraliza o item*/
+
+    /*align-items: start;*//*coloca o item encima da celula*/
+    /*align-items: end;*//*coloca o itme na parte inferior da celula*/
+    /*align-items: stretch;*//*valor padrão*/
+    /*align-items: center;*//*centraliza o item*/
+
+   /* place-items: center;/*pode-se usar os valores do aling-items e justify-atimes aumesmo tempo. Também pode usar um unico valor ao mesmo tempo, para representar anbos.*/
+
+    /*justify-content: alinha todo o conteudo da grid no eixo y*/
+
+    /*justify-content: stretch;*//*valor padrão*/
+    /*justify-content: start;*//*alinha todo o conteudo da grid a esquerda*/
+    /*justify-content: end;*//*alinha todo o conteudo da grid a dirieta*/
+    /*justify-content: center;*//*alinha todo o conteudo da grid no centro*/
+    /*justify-content: space-around;*//*separa todo o conteudo da grid em espaços equivalentes e nas extremidades deivdade o valor do espaço por dois e aplico o resultado em se*/
+    /*justify-content: space-between;*//*aloca uma quantidade de espaço uniforme em toda a grid, não faz nada nas extremidades*/
+    /*justify-content: space-evenly;*//*separa todo o container de forma uniforme incluseve as estremidades*/
+
+    /*align-content: alinha todo o conteudo da grid no eixo x*/
+
+    /*align-content: start;*//*posiciona todo o conteudo da grid na parte superior*/
+    /*align-content: end;*//*posiciona todo o conteudo da grid na parte inferior*/
+    /*align-content: center;*//*posiciona todo o conteudo da grid no centro*/
+    /*align-content: stretch;*//*se alogoa para alcansar a altura total*/
+    /*align-content: space-around;*//*separa todo o conteudo da grid em espaços equivalentes e nas extremidades deivdade o valor do espaço por dois e aplico o resultado em se*/
+    /*align-content: space-between;*//*aloca uma quantidade de espaço uniforme em toda a grid, não faz nada nas extremidades*/
+    /*align-content: space-evenly;*//*separa todo o container de forma uniforme incluseve as estremidades*/
+
+    /*place-content: space-between;*//*pode-se usar os valores do aling-content e justify-content aumesmo tempo. Também pode usar um unico valor ao mesmo tempo, para representar anbos.*/
+/*
+}
+
+.item-01{
+    background-color: lightblue;
+}
+.item-02{
+    background-color: lightcoral;
+}
+.item-03{
+    background-color: lightgray;
+}
+.item-04{
+    background-color: lightpink;
+}
+.item-05{
+    background-color: lightseagreen;
+}
+.item-06{
+    background-color: lightsalmon;
+}
+.item-07{
+    background-color: lightgoldenrodyellow;
+}
+
+.item-08{
+    background-color: palevioletred;
+}
+
+.item-09{
+    background-color: lightskyblue;
+    
+    /*justify-self: alina apenas a um intem especifico no eixo y*/
+
+    /*justify-self: start;*//*coloca a esquerda*/
+    /*justify-self: end;*//*coloca a direita*/
+    /*justify-self: center;*//*centraliza*/
+    /*justify-self: stretch;*//*alogo item para caber em todo a celula no eixo y*/
+
+    /*align-items: alina apenas um item especifico no eixo x*/
+
+    /*align-self: start;*//*coloca na parte superior*/
+    /*align-self: end;*//*coloca na parte inferior*/
+    /*align-self: center;*//*centraliza*/
+    /*align-self: stretch;*//*alogo item para caber em toda a celula no eixo x*/
+
+    /*place-self: stretch;/*pode-se usar os valores do aling-self e justify-self aumesmo tempo. Também pode usar um unico valor ao mesmo tempo, para representar anbos.*//*
+}*/

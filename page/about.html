@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulhario de Cadastro principal</title>
+    <link rel="stylesheet" href="/assets/css/Style.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <h3><p>Preencha os campos abaixo para se cadastrar:</p></h3>
+    <form name="cadastro" autocomplete="on" onsubmit="alert('Enviei o formulario');" method="post" action="#">
+        Nome: <input type="text" name="nome" required><br>
+        Idade: <input type="number" name="idade" required><br>
+        Senha: <input type="password" name="senha" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <h1>Apredendo formulharios e alguns inputs</h1>
+    <form>
+        <label>Digite aqui um texto:</label><input type="text" /><br>
+        <label>Digite aqui números:</label><input type="number" min="0" step="10" max="100"/><br>
+        <label>Range:</label><input type="range" min="0" max="100" /><br>
+        <label>Cor:</label><input type="color" /><br>
+        <label>@email:</label><input type="email" type="submit" /><br>
+        <label>URL:</label><input type="url" /><br>
+        <label>data:</label><input type="date" /><br>
+        <label>Week:</label><input type="week" /><br>
+        <label>Mês:</label><input type="month" /><br>
+        <label>Checkbox:</label><input type="checkbox" /><input type="checkbox" /><br>
+        <label>Radio:</label><input type="radio" name="aceitar"/><input type="radio" name="aceitar"/><br>
+        <label>Hiddne:</label><input type="hidden" value="teste"/><br>
+        <label>File:</label><input type="file" multiple /><br>
+        <label>Search:</label><input type="search" /><br>
+        <label>Butão:</label><input type="submit" value="Enviar" /><br>
+    </form>
+    <br>
+    <h1>Checkbox e Radio</h1>
+    <form method="post">
+        <h3>Pizza</h3>
+        <p>Quais opções você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="frango">Pizza de frango<br>
+        <input type="checkbox" name="opcional[]" value="calabresa">Pizza de calabresa<br>
+        <input type="checkbox" name="opcional[]" value="mussarela">Pizza de mussarela<br>
+        <input type="checkbox" name="opcional][]" value="portuguesa">Pizza de portuguesa<br>
+        <p>Adicionais:</p>
+        <input type="checkbox" name="Adicionais" value="azeitona">+ Azeitona<br>
+        <input type="checkbox" name="Adicionais" value="catupiry">+ Catupiry<br>
+        <input type="checkbox" name="Adicionais" value="bacon">+ Bacon<br>
+        <input type="checkbox" name="Adicionais" value="cebola">+ Cebola<br>
+        <p>Escolha o tamanho:</p>
+        <input type="radio" name="Escolha" value="pequena">Pequena<br>
+        <input type="radio" name="Escolha" value="media">Média<br>
+        <input type="radio" name="Escolha" value="grande">Grande<br>
+        <input type="radio" name="Escolha" value="familia">Família<br>
+        <p>Borda recheada:</p>
+        <input type="radio" name="Borda" value="Sim">Sim<br>
+        <input type="radio" name="Borda" value="Não">Não<br>
+        <p>Bebidas:</p>
+        <input type="checkbox" name="Bebida" value="coca">Coca-cola<br>
+        <input type="checkbox" name="Bebida" value="fanta">Fanta<br>
+        <input type="checkbox" name="Bebida" value="sprite">Sprite<br>
+        <input type="checkbox" name="Bebida" value="guarana">Guaraná<br>
+        <input type="checkbox" name="Bebida" value="pepsi">Pepsi<br>
+        <input type="checkbox" name="Bebida" value="guarana ZERO">Guaraná ZERO<br>
+        <input type="checkbox" name="Bebida" value="coca ZERO">Coca-cola ZERO<br>
+        <input type="checkbox" name="Bebida" value="pepsi BLACK">Pepsi BLACK<br>
+        <input type="checkbox" name="Bebida" value="suco de laranja">Suco de laranja<br>
+        <input type="checkbox" name="Bebida" value="suco de uva">Suco de uva<br>
+        <input type="checkbox" name="Bebida" value="suco de maracuja">Suco de maracujá<br>
+        <input type="checkbox" name="Bebida" value="sem bebida">Sem bebida<br><br>
+        <button type="submit">Enviar Pedido</button>
+    </form>
+    <br>
+    <h1>Aprendendo select e textarea</h1>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="nome" required><br>
+        <label>Idade:</label> <input type="number" name="idade" required><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o cargo</option><br>
+            <option value="admin">Administrador</option><br>
+            <option value="editor">Editor</option><br>
+            <option value="user">Usuário</option><br>
+            <option value="diretor">Diretor</option><br>
+            <option value="Presidente">Presidente</option><br>
+        </select><br>
+        <label>Cargo:</label>
+        <select name="role" multiple>
+            <option value="">Selecione o cargo</option><br>
+            <option value="admin">Administrador</option><br>
+            <option value="editor">Editor</option><br>
+            <option value="user">Usuário</option><br>
+            <option value="diretor">Diretor</option><br>
+            <option selected value="Presidente">Presidente</option><br>
+        </select><br>
+        
+        <label>senha</label><input type="password" name="senha" required><br>
+        <label>Asunto:</label><input type="text" name="senha" required><br>
+        
+        <label>Mensagem:</label><br>
+        <textarea name="mensagem" rows="10" cols="10">Menssage</textarea><br>
+        <button type="button">Clicavel</button> # Botão que não envia o formulário<br>
+        <button type="button" onclick="alert('Cliquei aqui')">Clicavel</button> # Botão que não envia o formulário só envia se usar onclick="alert('Cliquei aqui')"<br>
+        <button type="reset">Limpa</button><br>
+        <button type="submit">Emviar</button><br>
+    </form>
+    <br>
+    <h1>Apredendo formatação</h1>
+                <b>SOMMERVILLE, Ian</b>. <font color="red" face="terbuchert MS" >Engenharia de Software.</font> <u>10ª Ed. Editora Pearson, 2019</u>.
+PRESSMAN, Roger S.. <i>Engenharia de Software</i>: Uma Abordagem Profissional. <mark>8ª Ed. Editora McGraw-Hill Brasil, 2016.</mark>
+SBROCCO, J. H. T. C.; <sub>*</sub>MACEDO<sup>*</sup>, Paulo Cesar de. <strong> Metodologias ágeis:</strong> engenharia de software sob medida. <blockquote>São Paulo: Érica, v. 8, p. 9, 2012.</blockquote>
+    <br>
+    <h1>Testando div e span</h1>
+    <br>
+    <div id="menu-lateral">
+        <div id="link">
+            <ul>
+                <li class="Fundo-verde" id="Item-01">Item 1
+                    <ul id="Item-01">
+                        <li>Objeto 1</li>
+                        <li>Objeto 2</li>
+                    </ul>
+                </li>
+                <li class="Fundo-verde" id="Item-02">Item 2
+                    <ul id="Item-02">
+                        <li>Objeto 1</li>
+                        <li>Objeto 2</li>
+                    </ul>
+                </li>
+                <li class="Fundo-azul" id="Item-03">Item 3
+                    <ul id="Item-03">
+                        <li>Objeto 1</li>
+                        <li>Objeto 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>Hello <div>wolrd!</div></p>
+    <br>
+    <p><span><b>Hello</b></span>, wolrd<span>!</span></p>
+    <br>
+    <h1>Fromulhario com fieldset</h1>
+    <fieldset>
+        <legend>Nome</legend>
+        <div class="row">
+                <label><b>Nome:</b></label><input type="text" value="Nome"><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Idade</legend>
+        <div class="row">
+                <label><b>Idade:</b></label><input type="text" value="Idade"><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <div class="row">
+                <label><b>Sexo:</b></label><input type="text" value="Sexo"><br>
+        </div>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    <h1>Testando Embeds</h1>
+    <br>
+    <embed src="https://www.youtube.com/" width="600" height="450">
+    <p class="p_02"><span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Exercitationem ab laudantium numquam velit alias vero,
+        sit perspiciatis aspernatur nisi, odio nam fuga totam quis esse explicabo eveniet voluptate. Voluptas, reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde rerum,
+        non velit esse totam assumenda reprehenderit ullam perspiciatis sequi, minus,
+        numquam voluptatibus sed dolorem. Nihil nisi sunt est. 
+        Quia! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Ratione consequatur reiciendis a quibusdam doloremque illum tenetur quia,
+        libero, sunt quae error vitae magni totam saepe eaque quo dignissimos molestias quis.
+    </span></p>
+    <h1>Aprendendo iframe</h1>
+    <iframe src="https://dio.me" width="600" height="450"></iframe>
+    <br>
+    <h1>Testando vidio com Iframe</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cVZ73CheMn8?si=q9QRU8vbljLJXNmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <br>
+    <h1>Estudando imagens</h1>
+    <img src="https://images.steamusercontent.com/ugc/96097938057609586/E5FA089D47B1FD747AF1BCE42A20A3E0E1E838A6/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt=""><br>
+    <img src="https://portaln10.com.br/todocanal/wp-content/uploads/2025/08/Superman-2025.png"  width="600" alt=""><br>
+    <img src="https://www.planetcarsz.com/assets/uploads/2016/03/702efa6e50423094c7a98feee3d7717c.jpg" width="600" alt=""><br>
+    <h2>Estudando audios com html</h2>
+    <audio controls>
+        <source src="/video-imagem-audio/audio/09.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio><br>
+    <h2>Videos com html</h2>
+    <video controls>
+        <source src="/video-imagem-audio/vidio/Teste.mp4" type="video/mp4">
+        <source src="Teste copy.webm" type="video/webm">
+        Seu navegador não suporta o elemento de vídeo.
+    </video><br>
+    <p class="p_01">
+        tag tranck é suado  pra aplicar legendas em videos
+        dentro da tag video
+        tranck coloca src=""(paradefinir o arquivo de legenda, que poser tanto na lingua nativa do vidio quanto em outras linguas)
+        kind=""(define o tipo de legenda, podendo ser subitle(legenda para surdos e pessoas com deficiencia auditiva),captions(legenda para pessoas com deficiencia auditiva),descriptions(descrição do video para pessoas com deficiencia visual),chapters(capítulos do video) e metadata(informações adicionais sobre o video))
+        srclang=""(define a lingua da legenda, ex: pt-br, en, es)
+        label=""(define o nome da legenda, ex: portugues, english, spanish) e default(define a legenda padrão que será exibida quando o video for carregado)
+        capitons='legenda para surdos e pessoas com deficiencia auditiva'
+    </p><br>
+    <a href="#" class="a_02">teste</a><br>
+    <h1>Estudando tabelas com html</h1>
+    <table summary="Esta tabela é um teste" border="1" width="300" cellspacing="5" cellpadding="5" align="center">
+        <caption>Minha tabela de teste</caption>titulo da tabela
+        <thead>cabeça da tabela
+            <tr>
+                <th title="Coluna Nome">
+                    Nome
+                </th>
+                <th title="Coluna">
+                    Idade
+                </th>
+            </tr>
+        </thead>
+        <tbody>corpo da tabela
+            <tr id="linha1">
+                <td>
+                    Otávio
+                </td>
+                <td>
+                    18
+                </td>
+            </tr>
+            <tr id="linha2">
+                <td>
+                    Maria
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+            <tr id="linha3">
+                <td>
+                    João
+                </td>
+                <td>
+                    30
+                </td>
+            </tr>
+            <tr id="linha4">
+                <td>
+                    Ana
+                </td>
+                <td>
+                    22
+                </td>
+            </tr>
+            <tr id="linha5">
+                <td>
+                    Pedro
+                </td>
+                <td>
+                    28
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>roda pe
+            <tr>
+                <td>Total</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table><br>
+    <h1>Estudando tabelas com html sem borda</h1>
+    <caption> Tabela sem borda</caption>
+    <table width="300" align="center" cellspacing="0" cellpadding="5">
+        <caption>Minha tabela de teste</caption>titulo da tabela
+        <thead>cabeça da tabela
+            <tr>
+                    serve pra juntar colunas na horizontal
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th title="Coluna Nome">
+                    Nome
+                </th>
+                <th title="Coluna">
+                    Idade
+                </th>
+            </tr>
+        </thead>
+        <tbody>corpo da tabela
+            <tr id="linha1">
+                <td>
+                    Otávio
+                </td>
+                <td>
+                    18
+                </td>
+            </tr>
+            <tr id="linha2">
+                <td>
+                    Maria
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+            <tr id="linha3">
+                <td>
+                    João
+                </td>
+                <td>
+                    30
+                </td>
+            </tr>
+            <tr id="linha4">
+                <td>
+                    Ana
+                </td>
+                <td>
+                    22
+                </td>
+            </tr>
+            <tr id="linha5">
+                <td>
+                    Pedro
+                </td>
+                <td>
+                    28
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>roda pe
+            <tr>
+                <td>Total</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table><br>
+    <button class="button_02"><a href="/page/about_2.html">Proxima pagina</a></button><br>
+    <button><a href="index.html">Voltra para proxima pagina</a></button>
+</body>
+</html>

@@ -1,0 +1,274 @@
+@import url("/assets/css/reset/css/reset.css");
+
+
+/*Multicolunas*/
+/*.container{
+    /*column-count: 3;*/
+    /*column-width: 200px;
+    column-rule: 1px solid red;
+    column-gap: 100px;
+}*/
+
+/*Flexbox*/
+
+/*
+body{
+    margin: 0;
+}
+
+header{
+    background-color: lightblue;
+    padding: 60px;
+    text-align: center;
+}
+
+header h2{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+main{
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.details{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card{
+    background-color: lightblue;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+
+.image-card{
+    background-color: lightblue;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+.image-card img{
+    width: 100%;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+*/
+
+/*Grid*/
+/*
+body{
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(3, 300px);
+    grid-template-areas:
+    "header header header header"
+    "navbar main-container main-container main-container"
+    "navbar conteudo-1 conteudo-2 conteudo-3"
+    "navbar footer footer footer"
+    ;
+}
+
+header, nav, section{
+    padding: 20px;
+}
+
+header{
+    background-color: lightblue;
+    grid-area: header;
+}
+
+nav{
+    background-color: lightgreen;
+    grid-area: navbar;
+}
+
+.main-section-content{
+    background-color: lightsalmon;
+    grid-area:  main-container;
+}
+
+.content-1{
+    background-color: paleturquoise;
+    grid-area: conteudo-1;
+}
+
+.content-2{
+    background-color: papayawhip;
+    grid-area: conteudo-2;
+}
+
+.content-3{
+    background-color: plum;
+    grid-area: conteudo-3;
+}
+
+footer{
+    background-color: lightpink;
+    grid-area: footer;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+li a{
+    color: black;
+}
+*/
+
+/*media queries*//*
+@media print { /*print: corresponde a documentos que são uma pré-visualizasão de
+    impressão, ou em qualquer mídia que será voltada para imprimir.
+
+    speech: corresponde a dispositivos que leem o conteúdo de forma audível, como
+    um leitor de tela, exemplo.
+    
+    all: coresponde a todos os dispositivos.
+    
+    screen: corresponde a dispositivos com telas interligadas.*/
+    /*body {
+        background-color: black;
+        color: whitesmoke;
+    }
+}*/
+
+/*Media features/ recursos de mídias 
+
+@media screen and (/*min-width *//*max-width /*width*//*: 690px){
+    /*.card{
+        color: lightblue;
+        background-color: black;
+    }*/
+    /*
+    .details{
+        flex-direction: column;
+    }
+
+    .image-card{
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (orientation: landscape){
+    header{
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (pointer: /*coarse*//* fine){
+    header{
+        color: cornflowerblue;
+    }
+}
+
+/*Operadores / operators*//*
+
+@media screen and (min-width: 320px) and (max-width: 690px){
+    .card{
+        color: lightblue;
+        background-color: black;
+    }
+
+}
+*/
+/*mobile first*/
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav li{
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#skills{
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+#skills li{
+    list-style: decimal;
+}
+
+#education{
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (min-width: 720px) {
+    main{
+        flex-direction: row;
+        gap: 24px;
+        max-width: 1200px;
+        margin: 16px auto;
+        flex-wrap: wrap;
+    }
+
+    #presentation{
+        flex-basis: 500px;
+    }
+
+    #skills, #education{
+        flex: 1;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+    
+    nav ul li{
+        flex: 1;
+        text-align: center;
+    }
+}

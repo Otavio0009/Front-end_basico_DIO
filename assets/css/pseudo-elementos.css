@@ -1,0 +1,244 @@
+@import url("/assets/css/reset/css/reset.css");
+
+code{
+    background-color: lightgray;
+}
+
+/*
+p::first-letter{
+    color: red;
+}
+
+h1::first-letter{
+    color: blue;
+}
+*/
+
+/*adicina em todos os elementos da pagina*/
+
+/*
+::first-letter{
+    color: red;
+    background-color: lightblue;
+    margin-right: 10px;
+    border: 1px solid black;
+    font-size: 30px;
+}*/
+
+/*Selecina aprimeira linhado elemento*/
+
+/*
+p::first-line{
+    color: blue;
+    background-color: lightcoral;
+    font-size: 1rem;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}*/
+
+/*pega um elemento em tel cheia e istiliza essa telea*/
+/*
+video{
+    width: 100%;
+}
+
+video::backdrop{
+    background-color: red;
+}*/
+
+/*Istiliza os deteles que javem no html com os pontos pretos da li*/
+/*
+summary::marker{
+    content: "➜";
+    color: red;
+}
+
+li::marker{
+    content: "♱";
+    color: blueviolet;
+}*/
+
+/*istiliza o placeholder*/
+/*
+input{
+    color: red;
+}
+
+input::placeholder{
+    color: lightcoral;
+    background-color: lightblue;
+    text-transform: uppercase;
+    /*fonts*//*
+}*/
+
+/*Istiliza o seletor*/
+/*
+.Exemplo::selection{
+    background-color: red;
+    color: whitesmoke;
+    text-decoration: line-through;
+}
+
+::selection{
+    background-color: green;
+    color: brown;
+}*/
+
+/*estiliza o butão de downloads*//*
+input::file-selector-button {
+    border: 2px solid green;
+    background-color: brown;
+    color: whitesmoke;
+    padding: 12px;
+    border-radius: 5px;
+}*/
+
+/*cria um elemento dentro do seletor dentro, na frente*//*
+p::before{
+    content: "⚝";
+    color: red;
+    background-color: burlywood;
+}
+
+/*cria um elemento dentro do seletor dentro, a tras*//*
+p::after{
+    content: "±";
+    color: red;
+    background-color: burlywood;
+}
+
+.card-image{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background: url("/video-imagem-audio/image/Goku\ icon.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(236, 121, 121));
+}*/
+
+
+/*
+button{
+    background-color: red;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: brown;
+    color: whitesmoke;
+    border: 2px solid green;
+}
+
+a:active{
+    background-color: whitesmoke;
+    color: black;
+}
+
+label, .button{
+    display: block;
+    margin: 12px;
+    font-size: 1.5rem;
+}
+
+input, select{
+    font-size: 1.5rem;
+}
+
+input:focus{
+    outline: 2px dashed red;
+}
+
+select:focus{
+    background-color: yellow;
+}
+
+.button:focus-visible{
+    outline: 3px solid red;
+    outline-offset: 2px;
+    background-color: green;
+    color: whitesmoke;
+}
+
+label:focus-within{
+    font-weight: bold;
+    color: red;
+}*/
+
+/*
+p:target{
+    background-color: gold;
+}
+
+p:target::before{
+    content: "ᐅ";
+    margin-right: 10px;
+}*/
+
+/*
+button:disabled{
+    background-color: black;
+    color: yellow;
+}
+
+button:enabled{
+    background-color: red;
+    color: whitesmoke;
+}*/
+
+/*
+.o-1:link{
+    color: limegreen;
+    background-color: black;
+}
+
+.o-1:visited{
+    color: red;
+
+}*/
+
+/*
+input:placeholder-shown{
+    border-color: royalblue;
+    background-color: green;
+}
+
+input::placeholder{
+    color: white;
+}*/
+
+/*também fuciona no selection/option*/
+input{
+    accent-color: red;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 5px 2px purple;
+}
+
+input[type="radio"]{
+    accent-color: blue;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    text-decoration: line-through;
+}
