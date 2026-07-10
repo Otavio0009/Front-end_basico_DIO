@@ -47,18 +47,20 @@ console.log(y);
 
 y = pi ** 0.5;
 
-console.log(y.toFixed(3));/* Para é redondar um determinado valor de ponto flutunate usa-se toFixed(x)
+console.log(y.toFixed(3));/* O toFixed(x) é usado para a redondar um determinado valor de ponto flutunate, convertendo esse valor para uma
+string.
 [x, representa a quantidade de casas decimais que irão ter]*/
 
 /* y = y.toFixed(3);
 
-console.log(parseFloat(y))/*para converter uma string em float usa-se o parseFloat*/
+console.log(parseFloat(y)) /* para converter uma string em float usa-se o parseFloat */
 
 /* Condicionais e Boolean */
 
 const numero = 0;
 const numero_par = numero % 2 === 0; /* === compara apenas valores do mesmo tipo, == compras valores apos tentar convertelos
 para o mesmo tipo*/
+
 if (numero_par) {
     console.log(numero_par, 'é um número PAR !!!')
 } else{
@@ -82,3 +84,126 @@ if(numero_02){
 } else {
     console.log('Não');
 }
+
+/* Função em javaEscript */
+
+// Funções são blocos de codigo que posso chamar a qualquer momento
+
+// Sintaxe da é "function" e depois coloca o nome que você deseja
+
+// Ex:
+
+function teste(/*Onde ficam os parametros de uma função*/) {
+    console.log('Teste');
+}
+
+teste();
+
+// Ex2:
+
+function sayMyName(name) {
+    console.log("Your name is: " + name);
+}
+
+sayMyName("Otávio");
+
+// Ex3: 
+
+function quadrado(valor) {
+    return /* return vai retornar um valor mais de uma vez*/ valor * valor;
+}
+
+/* const quadradoDeDez = quadrado(10);
+console.log(quadradoDeDez); OU*/
+
+console.log(quadrado(10));
+
+// também pode fazer isso
+
+console.log(quadrado(10) + quadrado(10));
+
+// Exemplo pratico
+function incrementarJuros(valor, percentual) {
+    const valorDeAcrecimento = (percentual / 100) * valor;
+    return valor * valorDeAcrecimento;
+}
+
+console.log(incrementarJuros(100, 10));
+console.log(incrementarJuros(100, 20));
+console.log(incrementarJuros(100, 30));
+
+/* todos os codigos que for feito vai ser colocado dentro de uma função e essa
+função vai ser chamada de main, por exemplo: */
+
+function main() {
+    console.log("Hello, World!")
+}
+
+main();
+
+/* A função main é a função principal e tadas as outras vão ser colocadas dentro
+da main e seram chamadas de funções auxiliares, por exemplo: */
+
+function calculadaora(valor) {
+    return valor + 10
+}
+
+function main2() {
+    console.log("\nHello, World!");
+    console.log(calculadaora(5));
+}
+
+main2();
+
+// Exemplo pratico:
+
+function calcularIMC(peso, altura) {
+    return peso / Math.pow(altura, 2);
+}
+
+function classificarImc(imc) {
+    if (imc < 18.5) {
+
+        return 'Abaixo do peso';
+
+    } else if (imc >= 18.5 && imc < 25) {
+
+        return 'Peso normal';
+
+    } else if (imc >= 25 && imc < 30) {
+
+        return 'Acima do peso';
+
+    } else if (imc >= 30 && imc < 40) {
+
+        return 'Obesidade';
+
+    } else if (imc >= 40) {
+
+        return 'Obesidade Grave';
+    }
+}
+
+function main3() {
+    const peso = 190;
+    const altura = 1.80;
+
+    const imc = calcularIMC(peso, altura);
+
+    console.log(classificarImc(imc));
+
+} main3();
+
+/* Em javaEscript as funções são como um objeto, que pode ser manipulado como uma
+String, int, float, etc. Um Exemplo */
+
+function main4() {
+    console.log('Olá')
+
+} console.log(main4);
+
+main4 = function() {
+    console.log(9);
+} 
+
+main4();
