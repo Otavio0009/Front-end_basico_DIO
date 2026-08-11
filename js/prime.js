@@ -200,10 +200,60 @@ String, int, float, etc. Um Exemplo */
 function main4() {
     console.log('Olá')
 
-} console.log(main4);
+} //console.log(main4);
 
 main4 = function() {
     console.log(9);
 } 
 
 main4();
+
+/* JavaScript com Programação Orientada a Obejeto!
+organiza o código agrupando dados e comportamentos em objetos,
+baseando-se em quatro pilares: abstração, encapsulamento, herança e polimorfismo.*/
+
+/* A sua sintaxe é bem siples, primeiro você dis se ela é uma const ou let como se
+estivesse criando uma variavel a unica diferença é que enves de colocar uma valor
+vai criar algo parecido como uma função. Por Exemplo: */
+
+/* const otavio = {
+
+} */
+
+/* Nesse casu entedemos que o Obejeto é uma coleção de valores os agrupando. E
+funciona através de chave e valor. Um exemplo: */
+
+const otavio = {
+    nome: 'Otávio Do Carmo Neto',
+    idade: 19,
+};
+
+console.log(otavio.nome);
+console.log(otavio.idade);
+
+// Também pode dinamizar esse Objeto!
+
+otavio.altura = 1.83;
+
+// Da para apagar caracteristicas desse Obejeto
+
+delete otavio.nome;
+
+console.log(otavio);
+
+// Da para usar frunções dentro de um objeto, que são os seus metodos!
+
+const pessoa = {
+    nome: 'Otávio',
+    idade: 20,
+
+    descrever: function () {
+        console.log(`Meu nome é ${this.nome} e minha idade é de ${this.idade} anos`);
+    }
+};
+
+pessoa.descrever = function () { // sobre escrebve a função que está dentro do Objeto
+    console.log(`Meu nome é ${this.nome}`)
+};
+
+pessoa.descrever();
