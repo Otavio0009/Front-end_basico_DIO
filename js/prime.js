@@ -149,7 +149,6 @@ function calculadaora(valor) {
 }
 
 function main2() {
-    console.log("\nHello, World!");
     console.log(calculadaora(5));
 }
 
@@ -243,7 +242,7 @@ console.log(otavio);
 
 // Da para usar frunções dentro de um objeto, que são os seus metodos!
 
-const pessoa = {
+const pessoa1 = {
     nome: 'Otávio',
     idade: 20,
 
@@ -252,8 +251,46 @@ const pessoa = {
     }
 };
 
-pessoa.descrever = function () { // sobre escrebve a função que está dentro do Objeto
+/* pessoa.descrever = function () { // sobre escreve a função que está dentro do Objeto
     console.log(`Meu nome é ${this.nome}`)
-};
+}; */
 
-pessoa.descrever();
+pessoa1.descrever();
+
+// Tem como acessar os valores de um objeto através de uma sintaxe mas dinâmica!
+// Ex:
+
+const atributo = "Idade";
+
+console.log(pessoa1[atributo]); /* Se você reparar estamos acessando dinamicamente o
+o atributo através de uma String. Isso faz que agente consiga fazer um codigo mais
+dinamico. */
+
+/* CLASSES é uma forma de dinamizar um objeto. E a sua função é definar quias são
+as caracteristicas principais de um objeto e que ira se repetir durante o codigo,
+Resumindo classe é a definição de um objeto em quanto uma instacia é a ocorrencia. */
+class Pessoa {
+
+    nome;
+    idade;
+
+    descrever (params) { // como se fosse um tostring
+        console.log(`Meu nome é ${this.nome} e minha idade é de ${this.idade} anos`);
+    }
+}
+
+// Instanciando a classe pessoa:
+
+const neto = new Pessoa();
+neto.nome = 'Otávio';
+neto.idade = 20;
+
+const dinara = new Pessoa();
+dinara.nome = 'Dinara';
+dinara.idade = 45;
+
+console.log(neto);
+console.log(dinara);
+
+neto.descrever();
+dinara.descrever();
