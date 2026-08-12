@@ -274,23 +274,60 @@ class Pessoa {
     nome;
     idade;
 
-    descrever (params) { // como se fosse um tostring
-        console.log(`Meu nome é ${this.nome} e minha idade é de ${this.idade} anos`);
+    constructor(nome, idade) { /* O constructor serve para criar e inicializar objetos com
+    propriedades e valores específicos no momento em que são instanciados. */
+
+        this.nome = nome;
+        this.idade = idade;
+        this.anoDeNascimento = 2026 - idade;
+    }
+
+    descrever () { // como se fosse um tostring
+        console.log(`Meu nome é ${this.nome} e minha idade é de ${this.idade}`);
     }
 }
 
 // Instanciando a classe pessoa:
 
-const neto = new Pessoa();
-neto.nome = 'Otávio';
-neto.idade = 20;
-
-const dinara = new Pessoa();
-dinara.nome = 'Dinara';
-dinara.idade = 45;
+const neto = new Pessoa('Otávio', 20);
+const dinara = new Pessoa('Dinara', 46);
 
 console.log(neto);
 console.log(dinara);
 
-neto.descrever();
-dinara.descrever();
+// Exemplos de como funciona Função recebendo Objetos:
+
+class Homem {
+    nome;
+    idade;
+
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.dataDeNascimento = 2026 - idade;
+    }
+
+    descrever() {
+        console.log(`Meu nome é ${this.nome} e minha idade é de ${this.idade}`);
+    }
+}
+
+function comparaHomem (h1, h2) {
+    if (h1.idade > h2.idade) {
+        console.log(`${h1.nome} é mais velha do que ${h2.nome}!`);
+
+    } else if (h2.idade > h1.idade) {
+
+        console.log(`${h2.nome} é mais velha do que ${h1.nome}!`);
+
+    } else {
+
+        console.log(`${h1.nome} tem a mesma idade de ${h2.nome}`);
+    }
+}
+
+const filho = new Homem('Otávio Filho', 75);
+const helio = new Homem('Hélio', 75);
+
+comparaHomem(filho, helio);
+filho.descrever();
