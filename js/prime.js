@@ -331,3 +331,91 @@ const helio = new Homem('Hélio', 75);
 
 comparaHomem(filho, helio);
 filho.descrever();
+
+/* O que é um Array?
+  Em javaScript Array são formaos atraves de [] que dentro deles podem ser colocados
+  diferentes tipo, como string, inteiro, boleano, float, etc. E para
+  acessar(pecorrer) o Array e seus elementos usa for e while. Os elementos são
+  indetificodos pelos index. Por exemplo*/
+
+const alunos = ['Otávio', 'João', 'Pedro'];
+
+console.log(alunos[0] /* Imprime os intes da lista*/);
+console.log(alunos[1]);
+console.log(alunos[2]);
+
+/* Para adicinar intens na minha lista tem duas formas, usa o metodo push ou 
+colocando dentro do [] a posição queres acresentasr o intem */
+
+alunos[3] = 'Lindauva'; // Não dinamica
+alunos.push('Maria'); // Dinamica
+
+console.log(alunos[3]);
+console.log(alunos); // Antes
+
+// Para remover o primeiro usa o shift
+
+console.log(alunos.shift());
+
+// Para remover o ultimo intem de um Array usa o pop
+
+console.log(alunos.pop());
+console.log(alunos); // Depois
+
+/* Length mostra o tamanho da lista e da para fazer calculos entre outras coisas
+dinamicamente */
+
+console.log(alunos.length);
+
+// Exemplo de quando usar length
+
+const nota = [];
+
+nota.push(7);
+nota.push(6);
+nota.push(2);
+nota.push(3);
+nota.push(8.9);
+nota.push(9);
+nota.push(5.6);
+
+const soma = nota[0] +  nota[1] +  nota[2] +  nota[3] +  nota[4] +  nota[5] +  nota[6];
+
+console.log(soma / nota.length);
+
+/* Estrutura de repetição For. É usada quando tem um determinado tamanhopara
+predeterminado para ser pecorrido */
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// Usando for em uma String
+
+const nome = 'Otávio do Carmo Neto';
+
+for (let i = 0; i < nome.length; i++) {
+    console.log(nome[i]);
+}
+
+// Usando for no exemplo de notas
+
+const notas = [];
+
+notas.push(7);
+notas.push(6);
+notas.push(2);
+notas.push(3);
+notas.push(8.9);
+notas.push(9);
+notas.push(5.6);
+
+let soma2 = 0;
+
+for (let index = 0; index < notas.length; index++) {
+    const nota = notas[index];
+    soma2 += nota;
+}
+
+console.log('Soma das notas', soma);
+console.log('Media final', soma / notas.length);
