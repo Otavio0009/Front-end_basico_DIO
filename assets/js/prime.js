@@ -419,3 +419,31 @@ for (let index = 0; index < notas.length; index++) {
 
 console.log('Soma das notas', soma);
 console.log('Media final', soma / notas.length);
+
+
+/* Importação e Exportaçãosão recursos usados para dividir o código de um
+programa em vários arquivos */
+
+/* Gets e Print gets e print são funções utilitárias criadas pelo próprio sistema
+para ler a entrada do usuário e mostrar dados na tela, substituindo os comandos
+nativos da linguagem */
+
+// Ex:
+
+const funcoes = require('./importação/funcoesAuxiliares'); // essa função é usada para importar os elementos de outro arquivo!
+
+console.log(funcoes);
+
+/* Objeto destructuing não é um objeto físico, mas sim uma sintaxe especial
+que permite extrair dados de arrays ou objetos e colocá-los em variáveis 
+separadas de forma rápida e limpa. 
+Ex: */
+
+
+const {gets, print} = require('./importação/funcoesAuxiliares');
+print(gets());
+
+/* O ciclo de vida dos módulos ECMAScript (import/export) 
+possui três fases principais operadas pelo motor do ambiente: Construção (Parsing)
+ao baixar e analisar arquivos, Instanciação (Instantiation) ao criar os espaços
+de memória e Avaliação (Evaluation) ao executar o código de fato */
