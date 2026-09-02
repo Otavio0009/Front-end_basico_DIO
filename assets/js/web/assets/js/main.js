@@ -1,14 +1,17 @@
-function convertPokemonToLi (pokemon) {
+function convertPokemonTypesToLi(pokemonTypes) {
+    return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`)
+}
+
+function convertPokemonToLi(pokemon) {
     return `<li class="pokemon grass">
-                <span class="number">#001</span>
+                <span class="number">#${pokemon.order}</span>
                 <span class="name">${pokemon.name}</span>
 
                 <div class="detail">
                     <ul class="types">
-                        <li class="type">Grass</li>
-                        <li class="type">Poison</li>
+                        ${convertPokemonTypesToLi(pokemon.types).join('')}
                     </ul>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="${pokemon.name}">
+                    <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
                 </div>
             </li>`
 }
