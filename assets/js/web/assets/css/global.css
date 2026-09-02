@@ -21,8 +21,6 @@ body {
     margin: 0 0 1rem 0;
 }
 
-/* Media Queries Corrigidas (Aplicadas ao .pokemons) */
-
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
