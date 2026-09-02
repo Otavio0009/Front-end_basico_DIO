@@ -1,10 +1,21 @@
-const offset = 0
-const limit = 10
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+function convertPokemonToLi (pokemon) {
+    return `<li class="pokemon grass">
+                <span class="number">#001</span>
+                <span class="name">${pokemon.name}</span>
 
-fetch(url)
-    .then((response) => response.json()) 
+                <div class="detail">
+                    <ul class="types">
+                        <li class="type">Grass</li>
+                        <li class="type">Poison</li>
+                    </ul>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="${pokemon.name}">
+                </div>
+            </li>`
+}
 
-    .then((jsonBody) => console.log(jsonBody))
+const pokemonList = document.getElementById('pokemonList')
 
-    .catch((error) => consolelog(error))
+pokeApi.getPokemons().then((pokemons = []) => {
+    const newHtml =  pokemons.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML = newHtml
+})
